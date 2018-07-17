@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:id="@+id/doaa"
+    android:title="الدعاء"
+
+    android:icon="@drawable/doooaa"
+    />
+    <item android:id="@+id/sebha"
+        android:title="السبحه"
+        android:icon="@drawable/sbh"
+
+        />
+    <item android:id="@+id/doaafav"
+        android:title="دعاء مفضل"
+        android:icon="@drawable/doaafav"
+
+        />
+
+</menu>

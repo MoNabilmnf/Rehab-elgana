@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.example.mohamed_nabil.toa.Doaa_Fav"
+    android:background="@drawable/bg_azkar">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/navigation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="38dp"
+            android:inputType="numberSigned"
+            android:id="@+id/editText"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+
+            android:hint="عدد السبحه"
+            android:background="@drawable/sbhaeditext"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold|italic"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:paddingStart="10dp"
+            android:paddingLeft="25dp" />
+        <MultiAutoCompleteTextView
+            android:layout_width="300dp"
+            android:layout_height="38dp"
+            android:id="@+id/AutoCom"
+            android:completionThreshold="1"
+            android:background="@drawable/sbhaeditext"
+            android:textColor="@color/colorPrimary"
+            android:hint="اُسْمُ الذِّكْرُ"
+            android:textColorHint="@color/colorPrimary"
+            android:textStyle="bold|italic"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:paddingStart="10dp"
+            android:paddingLeft="25dp" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:text="إبدأ"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/btnstart"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp"
+            android:onClick="start" />
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        app:itemIconTint = "#FFFFFF"
+        app:itemTextColor="#FFFFFF"
+        app:menu= "@menu/drower"
+
+        />
+
+
+</RelativeLayout>
